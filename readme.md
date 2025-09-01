@@ -1,6 +1,6 @@
 ## Property Management System (PMS)
 
-A Property Management System is a tool that helps a landlord or manager keep track of their houses, apartments, rooms and tenants.
+A Property Management System (PMS) is a tool that helps a landlord or manager keep track of their houses, apartments, rooms and tenants.
 
 1. Create Property – Add the name of the house or apartment and where it is located.
 
