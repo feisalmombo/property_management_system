@@ -29,20 +29,20 @@
                 <table id="example1" width="100%" class="table table-striped table-bordered table-hover">
                     <thead>
                     <tr>
-                      <th>S/N</th>
-                      <th>Company Name</th>
-                      <th>TIN</th>
-                      <th>Phone Number</th>
-                      <th>Email</th>
-                      <th>Address</th>
-                      <th>Show</th>
-                      @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('superadmin'))
-                      <th>Edit</th>
-                      @endif
-                      @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('superadmin'))
-                      <th>Delete</th>
-                      @endif
-                      <th>Duration</th>
+                        <th>S/N</th>
+                        <th>Company Name</th>
+                        <th>TIN</th>
+                        <th>Phone Number</th>
+                        <th>Email</th>
+                        <th>Address</th>
+                        <th>Show</th>
+                        @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('superadmin'))
+                        <th>Edit</th>
+                        @endif
+                        @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('superadmin'))
+                        <th>Delete</th>
+                        @endif
+                        <th>Duration</th>
                     </tr>
                     </thead>
                     <tbody>

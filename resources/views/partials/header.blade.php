@@ -18,6 +18,8 @@
 <link rel="stylesheet" type="text/css" href="{{asset('temp/css/form-validation.css')}}">
   <link rel="stylesheet" href="{{asset('temp/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
 
+<link rel="icon" href="{{asset('favicon.ico')}}" >
+
   <!-- Font Awesome -->
   <link rel="stylesheet" href="{{asset('temp/bower_components/font-awesome/css/font-awesome.min.css')}}">
 

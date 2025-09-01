@@ -31,7 +31,7 @@
                                         @foreach($roles as $role)
                                             <option value="{{$role->id}}">{{$role->slug}}</option>
                                         @endforeach
-                                         </select>
+                                        </select>
 
 										</div>
 
