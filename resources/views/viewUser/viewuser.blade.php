@@ -90,7 +90,7 @@
                                                         <div class="col-sm-3">
                                                          <div class="center-block">
                                                             <div class="form-group">
-                                                                <label>Middle Name: </label>
+                                                                <label>Middle Name (Optional): </label>
                                                             </div>
                                                         </div>
                                                         </div>

@@ -31,7 +31,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                                <label>Middle Name: </label>
+                                                <label>Middle Name (Optional): </label>
                                                 <input class="form-control" name="mname"  value="{{ isset($users->middle_name) ? $users->middle_name : old('mname') }}">
                                             </div>
 
