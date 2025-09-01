@@ -15,8 +15,7 @@
 		<div class="panel panel-default">
 			<div class="panel-heading">
                 List of All Overdue
-
-                {{-- <a href="{{ url('/view/tenants/create') }}" class="col-2 pull-right" style="text-decoration: none;"><i class="fa fa-plus"></i>&nbsp;Add Tenant</a> --}}
+                <a href="{{ url('/view/tenants') }}" class="col-2 pull-right" style="text-decoration: none;"><i class="fa fa-arrow-left"></i>&nbsp;Back</a>
 
 			</div>
 			<!-- /.panel-heading -->
@@ -31,17 +30,17 @@
                     <tr>
                     <th>S/N</th>
                     <th>Full Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
+                    {{-- <th>Email</th> --}}
+                    {{-- <th>Phone Number</th> --}}
                     <th>Property Name</th>
                     <th>Property Location</th>
                     <th>Lease Start</th>
                     <th>Lease End</th>
-                    <th>Total Amount</th>
-                    <th>Amount Paid</th>
-                    <th>Payment Date</th>
+                    {{-- <th>Total Amount</th> --}}
+                    {{-- <th>Amount Paid</th> --}}
+                    {{-- <th>Payment Date</th> --}}
                     {{-- <th>Receipt Attachment</th> --}}
-                    <th>Payment Status</th>
+                    {{-- <th>Payment Status</th> --}}
                     {{-- <th>Show</th> --}}
                     {{-- @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('administrator'))
                     <th>Edit</th>
@@ -64,19 +63,19 @@
                             >
                                 <td class="center">{{ $key + 1 }}</td>
                                 <td class="center">{{ $tenantData->full_name }}</td>
-                                <td class="center">{{ $tenantData->email }}</td>
-                                <td class="center">{{ $tenantData->phone_number }}</td>
+                                {{-- <td class="center">{{ $tenantData->email }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->phone_number }}</td> --}}
                                 <td class="center">{{ $tenantData->property_name }}</td>
                                 <td class="center">{{ $tenantData->property_location }}</td>
                                 <td class="center">{{ $tenantData->lease_start }}</td>
                                 <td class="center">{{ $tenantData->lease_end }}</td>
-                                <td class="center">{{ $tenantData->total_amount }}</td>
-                                <td class="center">{{ $tenantData->amount_paid }}</td>
-                                <td class="center">{{ $tenantData->payment_date }}</td>
+                                {{-- <td class="center">{{ $tenantData->total_amount }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->amount_paid }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->payment_date }}</td> --}}
                                 {{-- <td class="center">
                                     <a href="{{ Storage::url($tenantData->receipt_attachment) }}" target="_blank" type="button" class="btn btn-danger"><i class="fa fa-download" arial-hidden="true"></i></a>
                                 </td> --}}
-                                <td class="center">{{ $tenantData->paid }}</td>
+                                {{-- <td class="center">{{ $tenantData->paid }}</td> --}}
 
                                 {{-- @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('superadmin'))
                                 <td>

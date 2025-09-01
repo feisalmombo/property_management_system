@@ -145,26 +145,29 @@ class TenantController extends Controller
 
         $this->validate(request(), [
             'full_name' => 'required|string|max:255',
-            'email' => 'required|string|max:255',
-            'phone_number' => 'required|numeric|digits:10',
+            // 'email' => 'required|string|max:255',
+            // 'phone_number' => 'required|numeric|digits:10',
             'property_id' => 'required',
-            'lease_start' => 'required',
-            'total_amount' => 'required',
-            'amount_paid' => 'required',
-            'payment_date' => 'required',
-            'status' => 'required',
+            // 'lease_start' => 'required',
+            'lease_start'    => 'required|date',
+            'lease_duration' => 'required|integer|min:1|max:6', // 1–6 months only
+            // 'total_amount' => 'required',
+            // 'amount_paid' => 'required',
+            // 'payment_date' => 'required',
+            // 'status' => 'required',
 
-            'nida_attachment' => 'nullable|file|mimes:pdf',
-            'lease_attachment' => 'nullable|file|mimes:pdf',
-            'receipt_attachment' => 'nullable|file|mimes:pdf',
+            // 'nida_attachment' => 'nullable|file|mimes:pdf',
+            // 'lease_attachment' => 'nullable|file|mimes:pdf',
+            // 'receipt_attachment' => 'nullable|file|mimes:pdf',
 
         ]);
 
         $property =  Property::where('property_name', $request->property_id)->first();
 
-        // return json_encode($property);
+        // $lease_end = Carbon::parse($request->lease_start)->addMonths(6);
 
-        $lease_end = Carbon::parse($request->lease_start)->addMonths(6);
+        $lease_start = Carbon::parse($request->lease_start);
+        $lease_end   = $lease_start->copy()->addMonths($request->lease_duration);
 
         $tenant = new Tenant();
         $tenant->full_name = $request->full_name;
@@ -260,26 +263,45 @@ class TenantController extends Controller
         $tenant = Tenant::findOrFail($id);
 
         $this->validate(request(), [
-            'full_name' => 'required|string|max:255',
-            'email' => 'required|string|max:255',
-            'phone_number' => 'required|numeric|digits:10',
-            'property_id' => 'required',
-            'lease_start' => 'required',
-            'total_amount' => 'required',
-            'amount_paid' => 'required',
-            'payment_date' => 'required',
-            'status' => 'required',
+            // 'full_name' => 'required|string|max:255',
+            // 'email' => 'required|string|max:255',
+            // 'phone_number' => 'required|numeric|digits:10',
+            // 'property_id' => 'required',
+            // 'lease_start' => 'required',
+            // 'total_amount' => 'required',
+            // 'amount_paid' => 'required',
+            // 'payment_date' => 'required',
+            // 'status' => 'required',
 
-            'nida_attachment' => 'nullable|file|mimes:pdf',
-            'lease_attachment' => 'nullable|file|mimes:pdf',
-            'receipt_attachment' => 'nullable|file|mimes:pdf',
+            // 'nida_attachment' => 'nullable|file|mimes:pdf',
+            // 'lease_attachment' => 'nullable|file|mimes:pdf',
+            // 'receipt_attachment' => 'nullable|file|mimes:pdf',
+
+            'full_name' => 'required|string|max:255',
+            // 'email' => 'required|string|max:255',
+            // 'phone_number' => 'required|numeric|digits:10',
+            'property_id' => 'required',
+            // 'lease_start' => 'required',
+            'lease_start'    => 'required|date',
+            'lease_duration' => 'required|integer|min:1|max:6', // 1–6 months only
+            // 'total_amount' => 'required',
+            // 'amount_paid' => 'required',
+            // 'payment_date' => 'required',
+            // 'status' => 'required',
+
+            // 'nida_attachment' => 'nullable|file|mimes:pdf',
+            // 'lease_attachment' => 'nullable|file|mimes:pdf',
+            // 'receipt_attachment' => 'nullable|file|mimes:pdf',
         ]);
 
         $property =  Property::where('property_name', $request->property_id)->first();
 
         // return json_encode($property);
 
-        $lease_end = Carbon::parse($request->lease_start)->addMonths(6);
+        // $lease_end = Carbon::parse($request->lease_start)->addMonths(6);
+
+        $lease_start = Carbon::parse($request->lease_start);
+        $lease_end   = $lease_start->copy()->addMonths($request->lease_duration);
 
 
 

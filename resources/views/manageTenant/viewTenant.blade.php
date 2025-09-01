@@ -31,17 +31,17 @@
                     <tr>
                     <th>S/N</th>
                     <th>Full Name</th>
-                    <th>Email</th>
-                    <th>Phone Number</th>
+                    {{-- <th>Email</th> --}}
+                    {{-- <th>Phone Number</th> --}}
                     <th>Property Name</th>
                     <th>Property Location</th>
                     <th>Lease Start</th>
                     <th>Lease End</th>
-                    <th>Total Amount</th>
-                    <th>Amount Paid</th>
-                    <th>Payment Date</th>
+                    {{-- <th>Total Amount</th> --}}
+                    {{-- <th>Amount Paid</th> --}}
+                    {{-- <th>Payment Date</th> --}}
                     {{-- <th>Receipt Attachment</th> --}}
-                    <th>Payment Status</th>
+                    {{-- <th>Payment Status</th> --}}
                     <th>Show</th>
                     @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('administrator'))
                     <th>Edit</th>
@@ -58,19 +58,19 @@
                             <tr class="odd gradeX">
                                 <td class="center">{{ $key + 1 }}</td>
                                 <td class="center">{{ $tenantData->full_name }}</td>
-                                <td class="center">{{ $tenantData->email }}</td>
-                                <td class="center">{{ $tenantData->phone_number }}</td>
+                                {{-- <td class="center">{{ $tenantData->email }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->phone_number }}</td> --}}
                                 <td class="center">{{ $tenantData->property_name }}</td>
                                 <td class="center">{{ $tenantData->property_location }}</td>
                                 <td class="center">{{ $tenantData->lease_start }}</td>
                                 <td class="center">{{ $tenantData->lease_end }}</td>
-                                <td class="center">{{ $tenantData->total_amount }}</td>
-                                <td class="center">{{ $tenantData->amount_paid }}</td>
-                                <td class="center">{{ $tenantData->payment_date }}</td>
+                                {{-- <td class="center">{{ $tenantData->total_amount }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->amount_paid }}</td> --}}
+                                {{-- <td class="center">{{ $tenantData->payment_date }}</td> --}}
                                 {{-- <td class="center">
                                     <a href="{{ Storage::url($tenantData->receipt_attachment) }}" target="_blank" type="button" class="btn btn-danger"><i class="fa fa-download" arial-hidden="true"></i></a>
                                 </td> --}}
-                                <td class="center">{{ $tenantData->paid }}</td>
+                                {{-- <td class="center">{{ $tenantData->paid }}</td> --}}
 
                                 <td>
                                     <a class="btn btn-info" data-toggle="modal" href='#{{ $tenantData->id."show" }}'><i class="fa fa-bullseye" arial-hidden="true"></i></a>
@@ -102,7 +102,7 @@
                                                     </div>
                                                     <hr/>
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -118,9 +118,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -136,7 +136,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
 
                                                     <div class="row">
                                                         <div class="col-sm-3">
@@ -210,7 +210,7 @@
                                                     </div>
                                                     <hr/>
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -226,9 +226,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -244,9 +244,9 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -262,7 +262,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
 
                                                     {{-- <div class="row">
                                                         <div class="col-sm-3">
@@ -282,7 +282,7 @@
                                                     </div>
                                                     <hr> --}}
 
-                                                    <div class="row">
+                                                    {{-- <div class="row">
                                                         <div class="col-sm-3">
                                                             <div class="center-block">
                                                                 <div class="form-group">
@@ -298,7 +298,7 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                                                    <hr/>
+                                                    <hr/> --}}
                                                 </div>
 
                                                 <div class="modal-footer">

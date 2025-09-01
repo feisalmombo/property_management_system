@@ -54,10 +54,10 @@
                                                 <input type="file" name="lease_attachment" id="lease_attachment" class="form-control" value="{{ isset($tenants->lease_attachment) ? $tenants->lease_attachment : old('lease_attachment') }}">
                                         </div> --}}
 
-                                        <div class="form-group">
+                                        {{-- <div class="form-group">
                                                 <label>Payment Date: </label>
                                                 <input type="date" class="form-control" name="payment_date" value="{{ isset($tenants->payment_date) ? $tenants->payment_date : old('payment_date') }}">
-                                        </div>
+                                        </div> --}}
                                     </div>
 
                                     <div class="col-md-4">
@@ -111,19 +111,32 @@
                                             <input type="date" class="form-control" name="lease_end">
                                         </div> --}}
 
-                                        <div class="form-group">
+                                        {{-- <div class="form-group">
                                             <label>Amount Paid: </label>
                                             <input class="form-control" name="amount_paid" value="{{ isset($tenants->amount_paid) ? $tenants->amount_paid : old('amount_paid') }}">
-                                        </div>
+                                        </div> --}}
 
                                         <div class="form-group">
+                                            <label>Lease Duration (months): </label>
+                                            <select class="form-control"  required="required" name="lease_duration" id="lease_duration">
+                                                <option value="">-- Select Lease Duration --</option>
+                                                <option value="1">1 Month</option>
+                                                <option value="2">2 Months</option>
+                                                <option value="3">3 Months</option>
+                                                <option value="4">4 Months</option>
+                                                <option value="5">5 Months</option>
+                                                <option value="6">6 Months</option>
+                                            </select>
+                                        </div>
+
+                                        {{-- <div class="form-group">
                                             <label>Status: </label>
                                             <select class="form-control"  required="required" name="status" id="status">
                                                 <option value="">-- Select Status --</option>
                                                         <option value="Paid">Paid</option>
                                                         <option value="Unpaid">Unpaid</option>
                                             </select>
-                                        </div>
+                                        </div> --}}
 
                                     </div>
 								</form>

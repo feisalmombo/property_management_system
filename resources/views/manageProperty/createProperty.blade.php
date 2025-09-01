@@ -31,7 +31,7 @@
 											<input class="form-control" name="property_name" id="property_name" required="required"  placeholder="eg: Upanga Apartment">
                                         </div>
 
-                                            <div class="form-group">
+                                            {{-- <div class="form-group">
                                                     <label>Property Status: </label>
                                                     <select class="form-control" name="status" id="status" required="required">
                                                         <option value="">-- Select Property Status --</option>
@@ -39,7 +39,7 @@
                                                         <option value="House">House</option>
                                                         <option value="Room">Room</option>
                                                     </select>
-                                            </div>
+                                            </div> --}}
                                     </div>
 
                                     <div class="col-md-4">
@@ -56,7 +56,7 @@
                                     </div>
 
 
-                                    <div class="col-md-4">
+                                    {{-- <div class="col-md-4">
 
 										<div class="form-group">
 											<label>Propert Type: </label>
@@ -67,7 +67,7 @@
                                             </select>
                                         </div>
 
-                                    </div>
+                                    </div> --}}
 								</form>
 							</div>
 						</div>

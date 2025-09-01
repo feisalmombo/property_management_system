@@ -32,8 +32,8 @@
                         <th>S/N</th>
                         <th>Property Name</th>
                         <th>Property Location</th>
-                        <th>Property Type</th>
-                        <th>Property Status</th>
+                        {{-- <th>Property Type</th>
+                        <th>Property Status</th> --}}
                         <th>Show</th>
                         @if(Auth::user()->hasRole('developer') || Auth::user()->hasRole('manager') || Auth::user()->hasRole('director') || Auth::user()->hasRole('administrator'))
                         <th>Edit</th>
@@ -50,8 +50,8 @@
                                 <td>{{ $key + 1 }}</td>
                                 <td>{{ $propertyData->property_name }}</td>
                                 <td>{{ $propertyData->property_location }}</td>
-                                <td class="center">{{ $propertyData->type }}</td>
-                                <td class="center">{{ $propertyData->status }}</td>
+                                {{-- <td class="center">{{ $propertyData->type }}</td>
+                                <td class="center">{{ $propertyData->status }}</td> --}}
 
                                 <td>
                                     <a class="btn btn-info" data-toggle="modal" href='#{{ $propertyData->id."show" }}'><i class="fa fa-bullseye" arial-hidden="true"></i></a>
@@ -100,7 +100,7 @@
                                                     </div>
                                                     <hr/>
 
-                                                <div class="row">
+                                                {{-- <div class="row">
                                                 <div class="col-sm-3">
                                                     <div class="center-block">
                                                     <div class="form-group">
@@ -116,9 +116,9 @@
                                                 </div>
                                                 </div>
                                                 </div>
-                                                <hr/>
+                                                <hr/> --}}
 
-                                                <div class="row">
+                                                {{-- <div class="row">
                                                 <div class="col-sm-3">
                                                     <div class="center-block">
                                                     <div class="form-group">
@@ -134,7 +134,7 @@
                                                 </div>
                                                 </div>
                                                 </div>
-                                                <hr/>
+                                                <hr/> --}}
 
                                                 </div>
                                                 <div class="modal-footer">

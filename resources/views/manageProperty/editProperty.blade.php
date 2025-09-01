@@ -33,14 +33,14 @@
 											<input class="form-control" name="property_name" value="{{ isset($properties->property_name) ? $properties->property_name : old('property_name') }}">
                                         </div>
 
-                                        <div class="form-group">
+                                        {{-- <div class="form-group">
                                             <label>Propert Type: </label>
                                             <select class="form-control" name="type" id="type" required="required">
                                                 <option value="">-- Select Property Type --</option>
                                                 <option value="Vacant">Vacant</option>
                                                 <option value="Occupied">Occupied</option>
                                             </select>
-                                        </div>
+                                        </div> --}}
                                     </div>
 
                                     <div class="col-md-4">
@@ -57,7 +57,7 @@
                                     </div>
 
 
-                                    <div class="col-md-4">
+                                    {{-- <div class="col-md-4">
 
 										<div class="form-group">
                                             <label>Property Status: </label>
@@ -69,7 +69,7 @@
                                             </select>
                                         </div>
 
-                                    </div>
+                                    </div> --}}
 								</form>
 							</div>
 						</div>
