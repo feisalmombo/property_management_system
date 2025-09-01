@@ -30,7 +30,7 @@
                                         </div>
 
                                         <div class="form-group">
-                                                <label>Middle Name: </label>
+                                                <label>Middle Name (Optional): </label>
                                                 <input class="form-control" name="mname" placeholder="eg: Allen (Optional)">
                                             </div>
 
