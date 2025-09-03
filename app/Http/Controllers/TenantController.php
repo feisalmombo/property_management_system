@@ -150,7 +150,7 @@ class TenantController extends Controller
             'property_id' => 'required',
             // 'lease_start' => 'required',
             'lease_start'    => 'required|date',
-            'lease_duration' => 'required|integer|min:1|max:6', // 1–6 months only
+            'lease_duration' => 'required|integer|min:1|max:12', // 1–6 months only
             // 'total_amount' => 'required',
             // 'amount_paid' => 'required',
             // 'payment_date' => 'required',
@@ -283,7 +283,7 @@ class TenantController extends Controller
             'property_id' => 'required',
             // 'lease_start' => 'required',
             'lease_start'    => 'required|date',
-            'lease_duration' => 'required|integer|min:1|max:6', // 1–6 months only
+            'lease_duration' => 'required|integer|min:1|max:12', // 1–6 months only
             // 'total_amount' => 'required',
             // 'amount_paid' => 'required',
             // 'payment_date' => 'required',
