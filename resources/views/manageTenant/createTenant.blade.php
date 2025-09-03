@@ -124,6 +124,7 @@
                                                 <option value="4">4 Months</option>
                                                 <option value="5">5 Months</option>
                                                 <option value="6">6 Months</option>
+                                                <option value="12">12 Months</option>
                                             </select>
                                         </div>
 
